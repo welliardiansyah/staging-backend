@@ -23,9 +23,11 @@
     "release": "standard-version && git push --follow-tags origin master",
     "prepare": "husky install"
   },
+  "name": "backend",
+  "description": "a really cool app",
+  "version": "1.0.0",
   "engines": {
-    "node": ">=14 <15",
-    "npm": ">=7"
+    "node": "16.0"
   },
   "commitlint": {
     "extends": [
