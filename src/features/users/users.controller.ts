@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  UseGuards,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -42,6 +43,7 @@ export class UsersController {
   }
 
   @Get()
+  @UseGuards()
   async getUsers() {
     try {
       const users = await this.usersService.getAll();
